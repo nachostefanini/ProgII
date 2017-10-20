@@ -7,7 +7,6 @@ public class AdminMenu {
             System.out.println("              Australis Airlines              ");
             System.out.println("                  Admin app                   ");
             System.out.println("+--------------------------------------------+");
-            System.out.println();
             System.out.println("Operation: ");
             System.out.println("1. Add Pilot: ");
             System.out.println("2. Quit Pilot: ");
@@ -21,10 +20,6 @@ public class AdminMenu {
             System.out.println("10. Exit: ");
             System.out.println();
             int opc = Scanner.getInt("What operation do you want to do: ");
-            System.out.println("+--------------------------------------------+");
-            System.out.println("              Australis Airlines              ");
-            System.out.println("                  Admin app                   ");
-            System.out.println("+--------------------------------------------+");
 
             System.out.println("\t");
 
@@ -68,9 +63,7 @@ public class AdminMenu {
                     System.out.println();
                     break;
                 case 6:
-                    System.out.flush();
-                    System.out.println();
-                    break;
+
                 case 7:
                     System.out.flush();
                     String codeOfAirportFrom = Scanner.getString("Enter the code of the airport From ");
@@ -87,8 +80,13 @@ public class AdminMenu {
 
                     break;
                 case 8:
+
+                    break;
+                case 9:
+                    break;
+                case 10:
                     System.out.flush();
-                    System.out.println();
+                    System.out.println("Thank you for using the Admin App...");
                     System.exit(0);
                     break;
                 default:

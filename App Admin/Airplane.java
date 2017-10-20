@@ -1,14 +1,14 @@
 public class Airplane {
-    Seat[][] seating;
+    Seat[][] seats;
     String name;
 
     public Airplane(Seat[][] seating, String name, int autonomy) {
-        this.seating = seating;
+        this.seats = seating;
         this.name = name;
     }
 
     public Seat[][] getSeating() {
-        return seating;
+        return seats;
     }
 
     public String getName() {
