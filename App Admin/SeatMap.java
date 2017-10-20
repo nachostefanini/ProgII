@@ -13,8 +13,6 @@ public class SeatMap {
         map = new Seat[row][column];
         map = fillSeatMap(map);
 
-
-
     }
     public Seat[][] fillSeatMap(Seat[][] matrix) {
         for (int i = 0; i < row; i++) {

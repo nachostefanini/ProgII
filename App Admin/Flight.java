@@ -3,12 +3,14 @@ public class Flight {
     Airport to;
     Airplane airplane;
     Pilot pilot;
+    SeatMap seatMap;
 
-    public Flight(Airport from, Airport to, Airplane airplane, Pilot pilot) {
+    public Flight(Airport from, Airport to, Airplane airplane, Pilot pilot, SeatMap seatMap) {
         this.from = from;
         this.to = to;
         this.airplane = airplane;
         this.pilot = pilot;
+        this.seatMap = seatMap;
     }
 
     public Airport getFrom() {

@@ -2,7 +2,10 @@ public class ClientMenu {
     public static void main(String[] args) {
 
         while(true){
-            System.out.println("------------");
+            System.out.println("+--------------------------------------------+");
+            System.out.println("              Australis Airlines              ");
+            System.out.println("                  Admin app                   ");
+            System.out.println("+--------------------------------------------+");
             System.out.println("Operation: ");
             System.out.println("1. Buy Ticket: ");
             System.out.println("2. Cancel Ticket: ");
@@ -32,8 +35,7 @@ public class ClientMenu {
                     System.out.println();
                     break;
                 case 4:
-                    System.out.flush();
-                    System.out.println();
+                    System.out.println("Thank you for using the Clients App");
                     System.exit(0);
                     break;
                 default:
