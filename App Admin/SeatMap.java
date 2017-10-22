@@ -1,19 +1,34 @@
 public class SeatMap {
 
     Seat aSeat;
-    String[] rowLetter = {"A","B","C","D","E","F","G","H"};
+    String[] rowLetter = {"A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T"};
 
     int row;
     int column;
     Seat[][] map;
 
     public SeatMap(int row, int column) {
-        this.row = row;
-        this.column = column;
+        if (row<20){
+            this.row = row;
+        }else {
+           throw new RuntimeException("Too big");
+        }
+
+        if (column<20){
+            this.column = column;
+        }else {
+            throw new RuntimeException("Too big");
+        }
+
         map = new Seat[row][column];
         map = fillSeatMap(map);
 
     }
+
+    public Seat[][] getMap() {
+        return map;
+    }
+
     public Seat[][] fillSeatMap(Seat[][] matrix) {
         for (int i = 0; i < row; i++) {
             for (int j = 0; j < column; j++) {
@@ -37,10 +52,10 @@ public void print() {
 }
 
 
-    public static void main(String[]args){
-        SeatMap a = new SeatMap(3,3);
-        a.print();
-
-    }
+//    public static void main(String[]args){
+//        SeatMap a = new SeatMap(19,19);
+//        a.print();
+//
+//    }
 
 }
