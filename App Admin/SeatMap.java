@@ -44,13 +44,18 @@ public void print() {
     System.out.println("Seat Map");
     for (int i = 0; i < row; i++) {
         for (int j = 0; j < column; j++) {
-            str += map[i][j].printName() + "  -" + "\t";
+            //This means that the last case will not have the separation "-"
+            if (j+1 == column){
+                str += map[i][j].printName()  + "\t";
+
+            }else{
+                str += map[i][j].printName() + "  -" + "\t";
+            }
         }
         System.out.println(str);
         str = "\t";
     }
 }
-
 
 //    public static void main(String[]args){
 //        SeatMap a = new SeatMap(19,19);
